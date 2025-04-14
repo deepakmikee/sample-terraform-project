@@ -6,6 +6,7 @@ resource "aws_efs_file_system" "sharedstore" {
   }
 
 
+
   kms_key_id                      = var.efs["kms_key_id"]
   encrypted                       = false
   performance_mode                = var.efs["performance_mode"]
