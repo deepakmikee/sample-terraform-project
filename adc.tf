@@ -5,6 +5,7 @@ resource "aws_efs_file_system" "sharedstore" {
     transition_to_ia = var.efs["transition_to_ia"]
   }
 
+
   kms_key_id                      = var.efs["kms_key_id"]
   encrypted                       = false
   performance_mode                = var.efs["performance_mode"]
